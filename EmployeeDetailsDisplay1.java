@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class EmployeeDetailsDisplay1 {
+class EmployeeDetailsDisplay1 extends BonusDisplay {
     public static void main(String[] args) {
         // Create a Scanner object to read input from the user
         Scanner scanner = new Scanner(System.in);
@@ -20,6 +20,11 @@ class EmployeeDetailsDisplay1 {
         System.out.println("Name: " + employeeName);
         System.out.println("ID: " + employeeID);
         System.out.println("Salary: $" + employeeSalary);
+
+        double x = 8.33;
+        System.out.println("bonusSalary: " +bonusSalary(x, employeeSalary));
+
+
 
         // Close the scanner to prevent resource leak
         scanner.close();
